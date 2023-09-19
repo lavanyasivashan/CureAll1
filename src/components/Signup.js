@@ -9,7 +9,7 @@ const Signup = () => {
         firstname:"",
         lastname:"",
         emailid :"",
-        dob:"",
+        phno:"",
         password:"",
         confirm:"",
         });
@@ -60,8 +60,8 @@ const Signup = () => {
        
     </div>
     <div className='name'>
-        <label className='label'>DATE OF BIRTH : </label>
-        <input className='input' type='text' name='dob' value={values.dob}  onChange={handleChange}/>
+        <label className='label'>PHONE NUMBER : </label>
+        <input className='input' type='text' name='phno' value={values.dob}  onChange={handleChange}/>
        
     </div>
     <div className='name'>

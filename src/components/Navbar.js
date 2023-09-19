@@ -7,13 +7,11 @@ import { Link } from "react-router-dom";
   return (
     <div>
     <div className='app'>
-        <div className='row'>
-            <div className='col-11'>
+        
                 <div className='home'>
                     <div className='home-text'>
-                        <h1>CURE ALL</h1>
-                        <h1 className='home-text-2'> COMMITED TO CARE</h1><br/><br/><br/>
-                        <h2>!!! WORKING TOGETHER FOR A HEALTHIER WORLD !!!</h2>
+                        <h1>CUPCAKES</h1>
+                        <h2 className='home-text-2'>DELICIOUS CUPCAKE FLAVOURS MADE!!</h2><br/><br/><br/>
                     </div>
                     <Link to='login'><div className='home-btn'>WELCOME</div></Link>
                         
@@ -21,9 +19,7 @@ import { Link } from "react-router-dom";
                 </div>
             </div>
             
-        </div>
-   
-    </div>
+       
   );
 }
 export default Navbar;

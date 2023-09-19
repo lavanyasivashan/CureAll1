@@ -1,35 +1,29 @@
+import React from "react";
+
+import {Button, Form,Input} from "antd";
+import "./Main.css";
+import { Typography } from '@mui/material';
 import { Link } from "react-router-dom";
-import React,{useState}from "react";
-import './Main.css';
 
+function Main() {
+  return (
+    <div className="appBg">
+    <Form className="loginForm">
+    <Typography.Title> LOGIN FORM</Typography.Title>
+      <Form.Item label="Username" name={"myEmail"}>
+      <Input placeholder="Enter your username"/>
+      </Form.Item>
+      <Form.Item label="Password name={myPassword}">
+      <Input placeholder="Enter your password"/>
+      </Form.Item>
+      <Link to="product">
+      <Button type="primary" htmlType="submit" block>
+        Login
+      </Button>
+      </Link>
 
-const Main=()=>{
-    const [popupStyle, showPopup]= useState("hide")
-    const popup=()=>{
-        showPopup("login-popup")
-        setTimeout(()=>showPopup("hide"),3000)
-    }
-    return(
-        
-        <div className="cover">
-        
-        <h1>LOGIN</h1>
-            <input type="text" placeholder="USERNAME"/>
-            <input type="password" placeholder="PASSWORD"/>
-            <Link to='/product'><div className="login-btn" onClick={popup}>LOGIN</div></Link>
-            <p className="text">Or  </p>
-            <Link to='/signup'>
-            <div className="alt-login">
-            
-                <div className="signup">
-                    <img src="th.jpeg" height={"50px"} width={"200px"}></img>
-                </div>
-            </div></Link>
-           
-        </div>
-        
-            
-    
-    )
+    </Form>
+    </div>
+  )
 }
 export default Main

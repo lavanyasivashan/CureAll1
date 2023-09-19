@@ -2,7 +2,7 @@ import './App.css';
 import SimpleBottomNavigation from './navigation/MainContainer';
 
 import Signup from './components/Signup';
-import Main from './components/Main';
+import Main from './components/Main.js';
 import Groupcup from './navigation/Groupcup';
 import Navbar from './components/Navbar';
 import { DataGrid } from '@mui/x-data-grid';
@@ -17,20 +17,8 @@ function App() {
  
   return (
     <div className="App">
-    
-    <BrowserRouter>
-      <Routes>
-      <Route path='/' element={<Navbar/>}/>
-        <Route path='login' element={<Main/>}/>
-        <Route path='signup' element={<Signup/>}/>
-        <Route path='product' element={<Groupcup/>}/>
-        <Route path='address' element={<Address/>}/>
-        <Route path='contact' element={<Contact/>}/>
-        <Route path='thanku' element={<Thanku/>}/>
-      </Routes>
-    </BrowserRouter>
-    
-    
+
+    <Navbar/>
     
    </div>
   );
